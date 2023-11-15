@@ -15,23 +15,24 @@ from coloredlogs import ColoredFormatter
 
 
 
-COLORED_FORMATTER="%(levelname)s %(asctime)s.%(msecs)d %(name)s |%(process)d:%(thread)d| %(funcName)s %(lineno)d %(message)s"
+COLORED_FORMATTER="%(levelname)s %(asctime)s.%(msecs)d %(name)s %(shortened_path)s %(funcName)s %(lineno)d |%(process)d:%(thread)d| %(message)s"
 
-DEFAULT_FORMATTER="%(levelname)s %(asctime)s.%(msecs)d %(name)s |%(process)d:%(thread)d| %(funcName)s %(lineno)d %(message)s"
+DEFAULT_FORMATTER="%(levelname)s %(asctime)s.%(msecs)d %(name)s %(shortened_path)s %(funcName)s %(lineno)d |%(process)d:%(thread)d| %(message)s"
 
 DATE_FORMAT='%Y-%m-%d %H:%M:%S'
 COLORED_FIELD_STYLES={
     'lineno': {'color': 127},
-    'name': {'color': 102},
+    'name': {'color': 103},
     'levelname': {'color': 214, 'bold': True},
-    'funcName': {'color': 102},
-    'asctime': {'color': 102, 'bold': True},
+    'funcName': {'color': 103},
+    'asctime': {'color': 103, 'bold': True},
     'message': {'color': 'white'},
-    'filename': {'color': 102},
-    'module': {'color': 102},
+    'filename': {'color': 103},
+    'module': {'color': 103},
     'relativeCreated': {'color': 'green'},
-    'msecs': {'color': 102, 'bold': True},
-    'process': {'color': 102}
+    'msecs': {'color': 103, 'bold': True},
+    'process': {'color': 103},
+    'shortened_path': {'color': 103}
 }
 
 COLORED_LEVEL_STYLES={
@@ -41,8 +42,8 @@ COLORED_LEVEL_STYLES={
     'debug': {'color': 27, 'bold': True},
     'critical': {'color': 'white', 'bold': True, 'background': 'red'},
     'exception': {'color': 196, 'bold': True},
-    'alert': {'color': 196, 'bold': True},
-    'user': {'color': 196, 'bold': True}
+    'alert': {'color': 166, 'bold': True},
+    'user': {'color': 200, 'bold': True}
 }
 
 
